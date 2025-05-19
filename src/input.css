@@ -1,0 +1,53 @@
+@import "tailwindcss";
+/* In your main CSS file that's processed by Tailwind */
+@import '@fontsource/open-sans/300.css';
+@import '@fontsource/open-sans/400.css';
+@import '@fontsource/open-sans/500.css';
+@import '@fontsource/open-sans/600.css';
+@import '@fontsource/open-sans/700.css';
+/* Add this to your CSS file (like output.css or create a custom.css) */
+.animated-gradient-text-white {
+    background: linear-gradient(to right,
+    #FFFFFF,
+    #EAEAEA,
+    #DADADA,
+    #CFCFCF,
+    #EAEAEA,
+    #FFFFFF
+    );
+    background-size: 300% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradient 5s linear infinite;
+}
+
+.animated-gradient-text-blue {
+    background: linear-gradient(to right, #1E40AF, #3B82F6, #0EA5E9, #0D47A1,#1E40AF);
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradient 4s linear infinite;
+}
+
+.animated-gradient-text-yellow {
+    background: linear-gradient(to right, #FACC15, #FDE047,#F59E0B, #FBBF24,#FACC15);
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+}
